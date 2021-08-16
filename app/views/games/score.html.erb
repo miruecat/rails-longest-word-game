@@ -1,0 +1,10 @@
+<% if @match_letters %>
+
+  <% if @english_word %>
+    <%= "Congratulations! #{@word} is a valid English word!" %>
+  <% else %>
+    <%= "Sorry but #{@word} does not seem to be a valid English word..." %>
+  <% end %>
+<% else %>
+  <%= "Sorry but #{@word} can't be built out of #{@letters.capitalize}" %>
+<% end %>
